@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1"></head>                       
+</head>
+
+        <body>
+            <section class="container">
+            <h2 class="heading">
+                <span> GPA Calculator</span></h2>
+                <p id="about">Use this calculator to calculate grade point average (GPA) and generate a GPA report.. Also you can use cumulative GPA (CGPA) to include past GPA and total grades accordingly.</p>
+
+            <table class="center" id="theTable">
+
+                <tr><td colspan="3" class="alignment mb-grey"><h1>GPA CALCULATOR</h1></td></tr>
+
+                <tr>
+                <td colspan="2">Cumulative GPA: <input type="number" id="gpa" value="0.00" min="0"></td>
+                <td>Credits taken so far: <input type="number" id="credits" value="0" min="0"></td>
+
+            </tr>
+            
+            <tr><td class="alignment">Courses</td><td class="alignment">Credits</td><td class="alignment">Grade</td></tr>
+            
+            <tr><td>Course 1:</td> <td><input type="number" id="c1" min="0" placeholder="Enter your credit"></td> <td><input type="text" id="g1" placeholder="Enter your grade"></td>
+            <tr><td>Course 2:</td> <td><input type="number" id="c2" min="0" placeholder="Enter your credit"></td> <td><input type="text" id="g2" placeholder="Enter your grade"></td>
+            <tr><td>Course 3:</td> <td><input type="number" id="c3" min="0" placeholder="Enter your credit"></td> <td><input type="text" id="g3" placeholder="Enter your grade"></td>
+            
+            <tr class="alignment"><th></th><td colspan="2">
+                <button onclick="addCourse()" class="btnNormal">Add Course</button>
+                &nbsp;<button onclick="deleteCourse()" class="btnNormal">Remove Course</button>
+                &nbsp;<button onclick="reset()" class="btnReset">Reset Fields</button>
+                <br><br><button onclick="calculateGPA()" class="btnCalc">Calculate</button></td></tr>
+
+            </table>
+
+            <table class="center" id="results"></table>
+        </tr>
+    </tr>
+</tr>
+</table>
+           
+           
+             <div class="timeline-divider">
+                    <div class="timeline-traveller">
+                    <img src="flight.png" height="35px" width="45px">
+                </div>
+            </div>
+            </section>
+
+ <div class="instructions">
+                <span>
+                    <b>Steps to calculate GPA:</b></span>
+                    <p>
+                    1. Enter secured grade and credit of any particular course in course  and credit section respectively.<br>
+                    (<b>Optional</b>: Enter cumulative GPA (CGPA) and credits taken so far if necessary.)
+                    <br>
+                    2. After entering all courses, click on <b>'Calculate'</b> button to calculate the GPA.
+                    <br>
+                       The result will be displayed below the course table.<br>
+                       <br>
+                    <b>Requirements:</b><br>
+                    At least three courses must be entered for proper functioning of GPA calculator.
+                    <br><br>
+                    <b>Other features:</b><br>
+                    1. Click on <b>'Add Course'</b> to add a new row/course in course table.<br>
+                    2. Click on <b>'Remove Course'</b> to remove a last row/course from the course table.<br>
+                    3. Click on <b>'Reset Fields'</b> to reset every fields like Grade and credit to default value.
+               </p>
+               <span>
+                   <b>Letter grade and the numerical equivalents used for this calculator</b>
+               </span>
+               <p>
+                   Grade point average (GPA) is a commonly used indicator of an individual's academic achievement in college. It is the average of the grades attained in each course, taking course credit into consideration. This calculator accepts letter grades and credit of the particular subject. These letter grades are translated into numerical values as shown below.
+                   <ul>
+                    <li>A+ = 10 grade points</li>
+                    <li>A = 9 grade points</li>
+                    <li>B+ = 8 grade points</li>
+                    <li>B = 7 grade points</li>
+                    <li>C+ = 6 grade points</li>
+                    <li>C = 5 points</li>
+                    <li>D+ = 4 grade points</li>
+                    <li>D = 3 grade point</li>
+                    <li>E+ = 2 grade point</li>
+                </ul>
+               </p>
+               <span><b>GPA calculation formula</b></span>
+               <p>GPA = Σ (grade value x unit credit points) ÷ Σ unit credit points<br>
+                Calculation steps
+                <ul>
+                    <li>Multiply each grade value by the unit credit points.</li>
+                    <li>Sum the resulting values (weighted GPA unit score).</li>
+                    <li>Sum the unit credit points</li>
+                    <li>Divide the sum of the weighted GPA unit score by the sum of the unit credit points</li>
+                    <li>Calculate to three decimal places.</li>
+                </ul>
+            </p>
+</div>       
+<script type="text/javascript" src="calculator.js"></script>
+        </body>
+</html>

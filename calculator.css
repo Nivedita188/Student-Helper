@@ -1,0 +1,185 @@
+
+.container
+{
+	position: relative;
+	/*width: 60%;*/
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(50deg, #e1bee7 0%, #9e9e9e8c 74%);
+}
+.heading {
+    width: auto;
+    text-align: center;
+    padding: 2px 4px;
+}
+.heading span {
+    font-size: 40px;
+    color: #607d8b;
+    display: inline-block;
+    padding-left: 8px;
+}
+#about
+{
+    text-align: justify;
+    margin: auto;
+    color: black;
+    padding: 10px;
+    line-height: 25px;
+    font-size: 20px;
+    margin: auto;
+    width: 60%;
+}
+.timeline-divider {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    border: 3px dashed #c0ffc2;
+    top: 1%;
+    left: 2%;
+}
+
+.timeline-traveller {
+    position: sticky;
+    top: 4%;
+    transform: rotate(90deg);
+}
+@media screen and (max-width: 572px)
+{
+    .timeline-divider
+    {
+        display: none;
+    }
+}
+/*@media screen and (min-width: 22em)
+{
+	.container
+	{
+		width: 100%;
+	}
+}*/
+h1
+{
+	text-align: center;
+	color: #9e9e9e;
+	margin:30px;
+	padding: 2px;
+}
+
+table.center
+{
+	margin-left:auto;
+    margin-right:auto;
+    margin-top: 100px;
+}
+
+td
+{
+	font-weight: bold;
+    background-color: #ffccbc;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.mb-grey
+{
+	background-image: linear-gradient(50deg, #2857a4 0%, #663041 74%);
+	color: white;
+}
+.alignment
+{
+	text-align: center;
+}
+input
+/*input and textarea under contact form*/
+{
+    /*border: 0px solid transparent;*/
+    border-bottom: 2px solid white;
+    max-width:  90%;
+    color: black;
+    background: transparent;
+    margin: 15px;
+    padding: 4px 10px;
+    width: 60%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    box-shadow: 0 5px 20px white;
+}
+
+.btnNormal
+{
+	background-color:ghostwhite; 
+	color: black;
+	padding: 0.8em 0.8em 0.78em;
+    font-size: 0.95rem;
+    border-radius: 2px;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+}
+.btnNormal:hover
+{
+	background-color:orange; 
+	color: black;
+}
+
+.btnReset
+{
+	background-color:red;
+	color:white;
+	padding: 0.8em 0.8em 0.78em;
+    font-size: 0.95rem;
+    border-radius: 2px;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+}
+.btnCalc
+{
+	background-color:green; 
+	color:white;
+}
+/*#instructions { border: 3px double brown; width:900px; background-color:#ffcb9c; margin-left:330px;
+                font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}*/
+.instructions{
+    /*background-image: url("ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;*/
+    position: relative;
+    /*background-color: #9e9e9e40;*/
+    background-image: linear-gradient(50deg, #e1bee7 0%, #9e9e9e8c 74%);
+    border: 2px black dashed;
+    right: 10 rem;
+    width: auto;
+    text-align: left;
+    padding: 2px 4px;
+}
+.instructions span {
+    font-size: 40px;
+    color: black;
+    display: inline-block;
+    padding-left: 8px;
+    margin-bottom: 55px;
+    background-color: #03a9f48a;
+    width:100%;
+    margin-right: 10px;
+}
+.instructions p
+{
+    text-align: justify;
+    margin right: 10px;
+    color: black;
+    padding: 10px;
+    line-height: 25px;
+    font-size: 20px;
+    width: 60%;
+    margin-bottom: 65px;
+}             
+.instructions p ul li
+{
+    font-size: 20px;
+}
